@@ -1,0 +1,16 @@
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\bin\Debug\LearnWPF.exe.config
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\bin\Debug\LearnWPF.exe
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\bin\Debug\LearnWPF.pdb
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\LearnWPF.csprojResolveAssemblyReference.cache
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\Input.g.cs
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\MainWindow.g.cs
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\App.g.cs
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\LearnWPF_MarkupCompile.cache
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\LearnWPF_MarkupCompile.lref
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\Input.baml
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\MainWindow.baml
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\LearnWPF.g.resources
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\LearnWPF.Properties.Resources.resources
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\LearnWPF.csproj.GenerateResource.Cache
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\LearnWPF.exe
+c:\users\armarkwell\documents\visual studio 2015\Projects\LearnWPF\LearnWPF\obj\Debug\LearnWPF.pdb
