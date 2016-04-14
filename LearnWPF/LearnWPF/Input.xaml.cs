@@ -64,15 +64,28 @@ namespace LearnWPF
         {
             try
             {
-                string input1;
+                string input1, input2, temp;
+                List<int> xArray = new List<int>();
+                List<int> yArray = new List<int>();
+                List<string> Offices = new List<string>();
+                char[] delimiterChars = { ' ' , ','};
                 StreamReader file1 = new StreamReader(TextBox1.Text);
 
                 while((input1 = file1.ReadLine()) != null)
                 {
-                    MessageBox.Show(input1);
+                    string[] finalInput = input1.Split(delimiterChars);
+                    Offices.Add(finalInput[0]);
+                    xArray.Add(Int32.Parse(finalInput[1]));
+                    xArray.Add(Int32.Parse(finalInput[2]));
                 }
 
+                //Console.WriteLine(yArray[1]);
+
                 file1.Close();
+
+                Plot plot = new Plot(Offices, xArray, yArray);
+                this.NavigationService.Navigate(plot);
+
             }
             catch
             {
