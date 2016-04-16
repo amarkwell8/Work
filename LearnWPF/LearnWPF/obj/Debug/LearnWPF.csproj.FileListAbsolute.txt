@@ -32,3 +32,9 @@ C:\Users\Austin R Markwell\Documents\GitHub\Work\LearnWPF\LearnWPF\obj\Debug\Lea
 C:\Users\Austin R Markwell\Documents\GitHub\Work\LearnWPF\LearnWPF\obj\Debug\LearnWPF.csproj.GenerateResource.Cache
 C:\Users\Austin R Markwell\Documents\GitHub\Work\LearnWPF\LearnWPF\obj\Debug\Plot.g.cs
 C:\Users\Austin R Markwell\Documents\GitHub\Work\LearnWPF\LearnWPF\obj\Debug\Plot.baml
+H:\LearnWPF\LearnWPF\bin\Debug\LearnWPF.exe.config
+H:\LearnWPF\LearnWPF\obj\Debug\LearnWPF.exe
+H:\LearnWPF\LearnWPF\obj\Debug\LearnWPF.pdb
+D:\LearnWPF\LearnWPF\bin\Debug\LearnWPF.exe.config
+D:\LearnWPF\LearnWPF\obj\Debug\LearnWPF.exe
+D:\LearnWPF\LearnWPF\obj\Debug\LearnWPF.pdb

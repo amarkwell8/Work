@@ -45,14 +45,10 @@ namespace LearnWPF
         }
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
-            // Create OpenFileDialog 
-            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-            // Set filter for file extension and default file extension 
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();       
             dlg.DefaultExt = ".txt";
             dlg.Filter = "Text documents (.txt)|*.txt";
-            // Display OpenFileDialog by calling ShowDialog method 
             Nullable<bool> result = dlg.ShowDialog();
-            // Get the selected file name and display in a TextBox 
             if (result == true)
             {
                 // Open document 
@@ -68,9 +64,12 @@ namespace LearnWPF
                 List<int> xArray = new List<int>();
                 List<int> yArray = new List<int>();
                 List<string> Offices = new List<string>();
+                List<string> Office1 = new List<string>();
+                List<string> Office2 = new List<string>();
+                List<int> Capacity = new List<int>();
                 char[] delimiterChars = { ' ' , ','};
                 StreamReader file1 = new StreamReader(TextBox1.Text);
-
+                StreamReader file2 = new StreamReader(TextBox2.Text);
                 while((input1 = file1.ReadLine()) != null)
                 {
                     string[] finalInput = input1.Split(delimiterChars);
@@ -78,12 +77,18 @@ namespace LearnWPF
                     xArray.Add(Int32.Parse(finalInput[1]));
                     xArray.Add(Int32.Parse(finalInput[2]));
                 }
-
+                while((input2 = file2.ReadLine()) != null)
+                {
+                    string[] finalInput = input2.Split(delimiterChars);
+                    Office1.Add(finalInput[0]);
+                    Office2.Add(finalInput[1]);
+                    Capacity.Add(Int32.Parse(finalInput[2]));
+                }
                 //Console.WriteLine(yArray[1]);
 
                 file1.Close();
 
-                Plot plot = new Plot(Offices, xArray, yArray);
+                Plot plot = new Plot(Offices, xArray, yArray, Office1, Office2, Capacity);
                 this.NavigationService.Navigate(plot);
 
             }

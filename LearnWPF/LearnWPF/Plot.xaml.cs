@@ -20,7 +20,7 @@ namespace LearnWPF
     /// </summary>
     public partial class Plot : Page
     {
-        public Plot(List<string> Offices, List<int> xArray, List<int> yArray)
+        public Plot(List<string> Offices, List<int> xArray, List<int> yArray, List<string> Office1, List<string> Office2, List<int> Capacity)
         {
             InitializeComponent();
             //Console.WriteLine(xArray[1]); //Test. Yep, working
