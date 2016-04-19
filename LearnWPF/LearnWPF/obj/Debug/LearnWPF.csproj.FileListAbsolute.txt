@@ -38,3 +38,10 @@ H:\LearnWPF\LearnWPF\obj\Debug\LearnWPF.pdb
 D:\LearnWPF\LearnWPF\bin\Debug\LearnWPF.exe.config
 D:\LearnWPF\LearnWPF\obj\Debug\LearnWPF.exe
 D:\LearnWPF\LearnWPF\obj\Debug\LearnWPF.pdb
+H:\LearnWPF\LearnWPF\obj\Debug\LearnWPF.csprojResolveAssemblyReference.cache
+H:\LearnWPF\LearnWPF\obj\Debug\Input.g.cs
+H:\LearnWPF\LearnWPF\obj\Debug\MainWindow.g.cs
+H:\LearnWPF\LearnWPF\obj\Debug\Plot.g.cs
+H:\LearnWPF\LearnWPF\obj\Debug\App.g.cs
+H:\LearnWPF\LearnWPF\obj\Debug\LearnWPF_MarkupCompile.cache
+H:\LearnWPF\LearnWPF\obj\Debug\LearnWPF_MarkupCompile.lref

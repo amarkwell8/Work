@@ -20,10 +20,57 @@ namespace LearnWPF
     /// </summary>
     public partial class Plot : Page
     {
-        public Plot(List<string> Offices, List<int> xArray, List<int> yArray, List<string> Office1, List<string> Office2, List<int> Capacity)
+        public Plot(List<Offices> Offices, List<string> Office1, List<string> Office2, List<int> Capacity)
         {
             InitializeComponent();
             //Console.WriteLine(xArray[1]); //Test. Yep, working
+            List<Offices> ReachedNodes = new List<Offices>();
+            List<Offices> PreviousNode = new List<Offices>();
+            List<Offices> UnreachedNodes = new List<Offices>();
+            double min = -999;
+            double CurrDistance;
+            string minOffice = "";
+            string CurrOffice;
+
+            PreviousNode[0].Office = "0";
+            PreviousNode[0].xValue = 0;
+            PreviousNode[0].yValue = 0;
+            ReachedNodes[0] = Offices[0];
+            for(int x = 1; x <= Offices.Count; x++)
+            {
+                UnreachedNodes[x] = Offices[x];
+            }
+
+            while (UnreachedNodes.Count != 0)
+            {
+                for(int y = 0; y < ReachedNodes.Count; y++) //iterate through reachednodes 
+                {
+                    for(int x = 0; x < UnreachedNodes.Count; x++)
+                    {
+                        CurrDistance = Distance(ReachedNodes[y].xValue, ReachedNodes[y].yValue, UnreachedNodes[x].xValue, UnreachedNodes[x].yValue);
+                        CurrOffice = UnreachedNodes[x].Office;
+                        if(min == -999)
+                        {
+                            min = CurrDistance;
+                            minOffice = UnreachedNodes[x].Office;
+                        }
+                        else if(CurrDistance < min)
+                        {
+                            min = CurrDistance;
+                            minOffice = UnreachedNodes[x].Office;
+                        }
+                        else
+                        {
+                            continue;
+                        }
+                    }
+                }
+                min = -999;
+                UnreachedNodes.Remove(new LearnWPF.Offices() { Office = minOffice });
+                var newNode = Offices.Where(x => x.Office == minOffice);
+                ReachedNodes.AddRange(newNode);
+                PreviousNode.Add(ReachedNodes[PreviousNode.Count - 1]);
+            }
 
         }
 

@@ -61,9 +61,10 @@ namespace LearnWPF
             try
             {
                 string input1, input2, temp;
-                List<int> xArray = new List<int>();
-                List<int> yArray = new List<int>();
-                List<string> Offices = new List<string>();
+                //List<int> xArray = new List<int>();
+                //List<int> yArray = new List<int>();
+                //List<string> Offices = new List<string>();
+                List<Offices> Offices = new List<LearnWPF.Offices>();
                 List<string> Office1 = new List<string>();
                 List<string> Office2 = new List<string>();
                 List<int> Capacity = new List<int>();
@@ -73,9 +74,9 @@ namespace LearnWPF
                 while((input1 = file1.ReadLine()) != null)
                 {
                     string[] finalInput = input1.Split(delimiterChars);
-                    Offices.Add(finalInput[0]);
-                    xArray.Add(Int32.Parse(finalInput[1]));
-                    xArray.Add(Int32.Parse(finalInput[2]));
+                    Offices.Add(new LearnWPF.Offices {Office = finalInput[0], xValue = Int32.Parse(finalInput[1]), yValue = Int32.Parse(finalInput[2]) });
+                    //xArray.Add(Int32.Parse(finalInput[1]));
+                    //xArray.Add(Int32.Parse(finalInput[2]));
                 }
                 while((input2 = file2.ReadLine()) != null)
                 {
@@ -88,7 +89,7 @@ namespace LearnWPF
 
                 file1.Close();
 
-                Plot plot = new Plot(Offices, xArray, yArray, Office1, Office2, Capacity);
+                Plot plot = new Plot(Offices, Office1, Office2, Capacity);
                 this.NavigationService.Navigate(plot);
 
             }
